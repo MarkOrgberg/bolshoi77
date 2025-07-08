@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Flat – Part 1</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      font-family: "Cormorant Garamond", serif;
+      background-color: #fffdd0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 2em;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    button {
+      margin-top: 2em;
+      padding: 0.5em 1.5em;
+      font-size: 1.2em;
+      cursor: pointer;
+      font-family: inherit;
+      border: none;
+      background-color: #654321;
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>
+      After the revolution, Rosenstein's house was confiscated, but during the NEP he managed to rent it and sold it room by room. This is how many Jewish families from Belarus and Ukraine came to live here. Before the war, this house became known as the Jewish house.
+    </p>
+    <p>
+      Konstantin Rosenstein himself survived the blockade and lived in his room on the 2nd floor until his death in 1952.
+    </p>
+    <button onclick="location.href='flat2.html'">Next</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Flat – Part 2</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      font-family: "Cormorant Garamond", serif;
+      background-color: #fffdd0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 2em;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .content {
+      max-width: 800px;
+    }
+
+    .flat-image {
+      max-width: 100%;
+      height: auto;
+      margin: 1em 0;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 2em;
+      padding: 0.5em 1.5em;
+      font-size: 1.2em;
+      cursor: pointer;
+      font-family: inherit;
+      border: none;
+      background-color: #654321;
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <p>
+      The flat on the 5th floor was divided into two in the 1920s — on the initiative of the pre-revolutionary tenant General Nikolaev, and three rooms on the side of the front staircase were bought by a certain Fraiman from Mogilev.
+    </p>
+
+    <img src="images/fraiman.jpg" alt="Yakov Fraiman, the second owner of flat nr. 5" class="flat-image" />
+    <img src="images/b77ap5door.jpeg" alt="Stairs leading to the door of flat nr. 5" class="flat-image" />
+
+    <p>
+      The fourth room was bought in 1927 by his fellow countryman Veniamin Rafalovich, who moved in with his wife and two children — daughter Miriam and son Adolf.
+    </p>
+
+    <img src="images/b77ceiling.jpeg" alt="A view of the ceiling" class="flat-image" />
+    <img src="images/b77fireplace.jpeg" alt="One of the two fireplaces in the flat" class="flat-image" />
+
+    <p>
+      In 1929, Fraiman sold the large hall to his cousin and business partner (co-owner of a brewery), Dovid-Irma Pevzner. So, a large Jewish family from Mogilev settled in the hall in the late twenties — the deeply religious Dovid-Irme with his wife Haya-Rohl and some children, who had already departed from religious traditions.
+    </p>
+
+    
+
+    <button onclick="location.href='main.html'">Enter the Flat</button>
+  </div>
+</body>
+</html>
