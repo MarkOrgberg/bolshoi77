@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bolshoi 77 – One Apartment, One Century</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .intro {
+      position: relative;
+      height: 100vh;
+      background: url("images/hausfoto.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 1s ease;
+    }
+
+    .intro button {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.5em;
+      padding: 12px 30px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 1px solid #2e2e2e;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .intro button:hover {
+      background-color: #eaeaea;
+    }
+
+    .main-content {
+      display: none;
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .main-content img {
+      width: 100%;
+      max-width: 500px;
+      margin: 30px auto 20px;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .text-link {
+      color: #367588;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <section class="intro" id="introSection">
+    <button id="startBtn">Enter</button>
+  </section>
+
+  <section class="main-content" id="mainContent">
+    <img src="images/pevzner-family.jpg" alt="Pevzner Family" />
+    <p class="intro-text">
+      This is the Jewish family Pevzner. The father, Dovid-Irme, the mother, Chaja-Rochl, and their many children.
+      It’s the 1920s. The big family lives in the city of Mogilev in Belarus.
+      Soon they all will move to a big city — 
+      <a href="leningrad.html" class="text-link">to Leningrad</a>.
+    </p>
+  </section>
+
+  <script>
+    const startBtn = document.getElementById("startBtn");
+    const intro = document.getElementById("introSection");
+    const main = document.getElementById("mainContent");
+
+    startBtn.addEventListener("click", () => {
+      intro.style.opacity = "0";
+      setTimeout(() => {
+        intro.style.display = "none";
+        main.style.display = "block";
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
